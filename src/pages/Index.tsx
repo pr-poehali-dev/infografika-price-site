@@ -35,7 +35,7 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold text-primary">Инфографика</h1>
+            <h1 className="text-2xl font-bold text-primary">NAA Visuals</h1>
             <div className="hidden md:flex gap-6">
               <button onClick={() => scrollToSection('portfolio')} className="text-foreground hover:text-accent transition-colors">
                 Портфолио
@@ -60,10 +60,10 @@ const Index = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center animate-fade-in">
           <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">
-            Профессиональная инфографика
+            Мобильный дизайнер нового поколения
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Превращаем сложные данные в понятные и красивые визуальные истории
+            Микс мобильных технологий, креатива и искусственного интеллекта. Это не просто дизайн — это новая скорость визуала
           </p>
           <Button onClick={() => scrollToSection('application')} size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8 py-6">
             Заказать проект
@@ -86,9 +86,9 @@ const Index = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle>О нас</CardTitle>
+                <CardTitle>Анастасия Никольская</CardTitle>
                 <CardDescription>
-                  Мы специализируемся на создании качественной инфографики для бизнеса и медиа
+                  Создаю продающую инфографику для маркетплейсов, обрабатываю фото и делаю презентации в трендовых стилях
                 </CardDescription>
               </CardHeader>
             </Card>
