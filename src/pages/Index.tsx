@@ -31,8 +31,8 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-secondary">
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b">
+    <div className="min-h-screen bg-background">
+      <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-md z-50 border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-primary">NAA Visuals</h1>
@@ -71,10 +71,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="portfolio" className="py-20 px-4 bg-white">
+      <section id="portfolio" className="py-20 px-4 bg-secondary">
         <div className="container mx-auto">
-          <h3 className="text-4xl font-bold text-primary mb-4 text-center">Портфолио</h3>
-          <p className="text-center text-muted-foreground mb-12">Примеры наших работ</p>
+          <h3 className="text-4xl font-bold text-accent mb-4 text-center">Портфолио</h3>
+          <p className="text-center text-muted-foreground mb-12">Примеры моих работ</p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card className="overflow-hidden hover:shadow-xl transition-shadow animate-scale-in">
@@ -97,41 +97,49 @@ const Index = () => {
               <Card className="overflow-hidden hover:shadow-lg transition-all hover:scale-105">
                 <div className="aspect-square overflow-hidden">
                   <img 
-                    src="https://cdn.poehali.dev/projects/16cf802f-c8ee-43ec-9e47-9628d5756cd0/files/afaf2118-c86a-4f24-8c11-20f359fa34aa.jpg" 
-                    alt="Аналитическая инфографика"
+                    src="https://cdn.poehali.dev/files/cc30988e-39d7-42b6-966b-13123d6b4145.jpeg" 
+                    alt="AirPods Pro инфографика"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <CardHeader className="p-3">
-                  <CardTitle className="text-sm">Аналитика</CardTitle>
+                  <CardTitle className="text-sm">AirPods Pro</CardTitle>
                 </CardHeader>
               </Card>
               <Card className="overflow-hidden hover:shadow-lg transition-all hover:scale-105">
                 <div className="aspect-square overflow-hidden">
                   <img 
-                    src="https://cdn.poehali.dev/projects/16cf802f-c8ee-43ec-9e47-9628d5756cd0/files/01b25693-e255-459c-9b1c-07f49e7fc362.jpg" 
-                    alt="Маркетинговая инфографика"
+                    src="https://cdn.poehali.dev/files/248403bc-c8c4-455f-9d6b-e989a510222e.PNG" 
+                    alt="Сумка и леопард"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <CardHeader className="p-3">
-                  <CardTitle className="text-sm">Маркетинг</CardTitle>
+                  <CardTitle className="text-sm">Сумка</CardTitle>
                 </CardHeader>
               </Card>
               <Card className="overflow-hidden hover:shadow-lg transition-all hover:scale-105">
-                <div className="aspect-square bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center">
-                  <Icon name="BookOpen" size={32} className="text-accent" />
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src="https://cdn.poehali.dev/files/9ca63460-fa91-43ff-b146-9be6f4287d7f.png" 
+                    alt="Футболка 100% хлопок"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardHeader className="p-3">
-                  <CardTitle className="text-sm">Обучение</CardTitle>
+                  <CardTitle className="text-sm">Футболка</CardTitle>
                 </CardHeader>
               </Card>
               <Card className="overflow-hidden hover:shadow-lg transition-all hover:scale-105">
-                <div className="aspect-square bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center">
-                  <Icon name="Presentation" size={32} className="text-accent" />
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src="https://cdn.poehali.dev/files/a807a2c0-5cd1-40c3-9448-febe06592295.png" 
+                    alt="Мульт-стиль - обработка фото"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardHeader className="p-3">
-                  <CardTitle className="text-sm">Презентации</CardTitle>
+                  <CardTitle className="text-sm">Мульт-стиль</CardTitle>
                 </CardHeader>
               </Card>
             </div>
@@ -141,18 +149,18 @@ const Index = () => {
 
       <section id="services" className="py-20 px-4">
         <div className="container mx-auto">
-          <h3 className="text-4xl font-bold text-primary mb-4 text-center">Услуги</h3>
-          <p className="text-center text-muted-foreground mb-12">Что мы предлагаем</p>
+          <h3 className="text-4xl font-bold text-accent mb-4 text-center">Услуги</h3>
+          <p className="text-center text-muted-foreground mb-12">Что я предлагаю</p>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-6">
             <Card className="hover:shadow-xl transition-shadow animate-fade-in">
               <CardHeader>
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="PieChart" size={24} className="text-accent" />
+                  <Icon name="ShoppingBag" size={24} className="text-accent" />
                 </div>
-                <CardTitle>Аналитическая инфографика</CardTitle>
+                <CardTitle>Инфографика для маркетплейсов</CardTitle>
                 <CardDescription className="mt-2">
-                  Визуализация данных, графики, диаграммы для отчетов и презентаций
+                  Продающие карточки товаров
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -160,11 +168,11 @@ const Index = () => {
             <Card className="hover:shadow-xl transition-shadow animate-fade-in">
               <CardHeader>
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="TrendingUp" size={24} className="text-accent" />
+                  <Icon name="Image" size={24} className="text-accent" />
                 </div>
-                <CardTitle>Маркетинговая инфографика</CardTitle>
+                <CardTitle>Обработка фото</CardTitle>
                 <CardDescription className="mt-2">
-                  Креативные визуалы для социальных сетей и рекламных кампаний
+                  Фото в трендовых стилях
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -172,11 +180,23 @@ const Index = () => {
             <Card className="hover:shadow-xl transition-shadow animate-fade-in">
               <CardHeader>
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="BookOpen" size={24} className="text-accent" />
+                  <Icon name="Presentation" size={24} className="text-accent" />
                 </div>
-                <CardTitle>Образовательная инфографика</CardTitle>
+                <CardTitle>Презентации</CardTitle>
                 <CardDescription className="mt-2">
-                  Инфографика для обучения, схемы процессов и руководства
+                  Оформление презентаций
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow animate-fade-in">
+              <CardHeader>
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="CreditCard" size={24} className="text-accent" />
+                </div>
+                <CardTitle>Визитки</CardTitle>
+                <CardDescription className="mt-2">
+                  Дизайн визиток
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -184,99 +204,72 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="pricing" className="py-20 px-4 bg-white">
+      <section id="pricing" className="py-20 px-4 bg-secondary">
         <div className="container mx-auto">
-          <h3 className="text-4xl font-bold text-primary mb-4 text-center">Цены</h3>
-          <p className="text-center text-muted-foreground mb-12">Прозрачные тарифы под ваши задачи</p>
+          <h3 className="text-4xl font-bold text-accent mb-4 text-center">Цены</h3>
+          <p className="text-center text-muted-foreground mb-12">Прозрачные тарифы</p>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-5 gap-6 max-w-6xl mx-auto">
             <Card className="hover:shadow-xl transition-all hover:scale-105">
               <CardHeader>
-                <CardTitle>Базовый</CardTitle>
+                <CardTitle className="text-lg">Обработка фото</CardTitle>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold text-primary">от 5000₽</span>
+                  <span className="text-3xl font-bold text-accent">199₽</span>
                 </div>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>Простая инфографика</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>До 5 элементов</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>1 правка</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>Срок: 3 дня</span>
-                  </li>
-                </ul>
+                <p className="text-sm text-muted-foreground">Мульт-стиль, Barbie и другие тренды</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all hover:scale-105">
+              <CardHeader>
+                <CardTitle className="text-lg">Презентация</CardTitle>
+                <div className="mt-4">
+                  <span className="text-3xl font-bold text-accent">299₽</span>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">Оформление презентаций</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all hover:scale-105">
+              <CardHeader>
+                <CardTitle className="text-lg">Визитка</CardTitle>
+                <div className="mt-4">
+                  <span className="text-3xl font-bold text-accent">499₽</span>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">Дизайн визитки</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all hover:scale-105">
+              <CardHeader>
+                <CardTitle className="text-lg">Карточка товара</CardTitle>
+                <div className="mt-4">
+                  <span className="text-3xl font-bold text-accent">499₽</span>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">Инфографика для WB/Ozon</p>
               </CardContent>
             </Card>
 
             <Card className="border-accent border-2 hover:shadow-xl transition-all hover:scale-105 relative">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-white px-4 py-1 rounded-full text-sm font-semibold">
-                Популярный
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-background px-4 py-1 rounded-full text-sm font-semibold">
+                Выгодно
               </div>
               <CardHeader>
-                <CardTitle>Стандарт</CardTitle>
+                <CardTitle className="text-lg">Комбо 5 карточек</CardTitle>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold text-primary">от 12000₽</span>
+                  <span className="text-3xl font-bold text-accent">1799₽</span>
                 </div>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>Комплексная инфографика</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>До 15 элементов</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>3 правки</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>Срок: 5 дней</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-all hover:scale-105">
-              <CardHeader>
-                <CardTitle>Премиум</CardTitle>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold text-primary">от 25000₽</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>Эксклюзивный дизайн</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>Без ограничений</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>Неограниченные правки</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-accent mt-0.5" />
-                    <span>Срок: индивидуально</span>
-                  </li>
-                </ul>
+                <p className="text-sm text-muted-foreground">5 карточек товара по выгодной цене</p>
               </CardContent>
             </Card>
           </div>
@@ -285,7 +278,7 @@ const Index = () => {
 
       <section id="application" className="py-20 px-4">
         <div className="container mx-auto max-w-2xl">
-          <h3 className="text-4xl font-bold text-primary mb-4 text-center">Оставить заявку</h3>
+          <h3 className="text-4xl font-bold text-accent mb-4 text-center">Оставить заявку</h3>
           <p className="text-center text-muted-foreground mb-12">Свяжемся с вами в течение 24 часов</p>
           
           <Card className="animate-scale-in">
@@ -349,9 +342,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-4 bg-white">
+      <section id="contact" className="py-20 px-4 bg-secondary">
         <div className="container mx-auto max-w-4xl">
-          <h3 className="text-4xl font-bold text-primary mb-12 text-center">Контакты</h3>
+          <h3 className="text-4xl font-bold text-accent mb-12 text-center">Контакты</h3>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -361,7 +354,7 @@ const Index = () => {
                 </div>
                 <CardTitle className="text-lg">Email</CardTitle>
                 <CardDescription className="mt-2">
-                  info@infographic.ru
+                  anastasiya.nikolskaya15@gmail.com
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -373,7 +366,7 @@ const Index = () => {
                 </div>
                 <CardTitle className="text-lg">Телефон</CardTitle>
                 <CardDescription className="mt-2">
-                  +7 (999) 123-45-67
+                  +7 (911) 101-77-20
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -383,9 +376,9 @@ const Index = () => {
                 <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="MapPin" size={24} className="text-accent" />
                 </div>
-                <CardTitle className="text-lg">Офис</CardTitle>
+                <CardTitle className="text-lg">Город</CardTitle>
                 <CardDescription className="mt-2">
-                  Москва, ул. Примерная, 1
+                  Москва
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -395,7 +388,7 @@ const Index = () => {
 
       <footer className="bg-primary text-primary-foreground py-8 px-4">
         <div className="container mx-auto text-center">
-          <p>&copy; 2024 Инфографика. Все права защищены.</p>
+          <p>&copy; 2024 NAA Visuals. Все права защищены.</p>
         </div>
       </footer>
     </div>
